@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:background="@color/white1">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/aviloader"
+        android:layout_marginBottom="50dp"
+        android:layout_centerInParent="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="invisible"
+        app:indicatorName="BallScaleMultipleIndicator"
+        app:indicatorColor="@color/colorPrimaryDark"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:background="#E3E8F0"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#a7551f"
+            android:singleLine="true"
+            android:layout_marginLeft="7dp"
+            android:textAlignment="textStart"
+            android:text="Leave"
+            android:src="@drawable/mailicon"/>
+
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5"
+            android:padding="5dp"
+            android:src="@drawable/cancelicon"/>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_title"
+        android:layout_centerInParent="true"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/date1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/calendaricon"
+
+                android:drawablePadding="8dp"
+                android:focusable="false"
+                android:hint="Tap to select the From Date"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:textSize="14dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#000000"></View>
+
+
+            <EditText
+                android:id="@+id/date2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/calendaricon"
+                android:drawablePadding="8dp"
+                android:focusable="false"
+                android:hint="Tap to select the To Date"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:textSize="14dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#000000"></View>
+
+
+            <EditText
+                android:id="@+id/reason"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shadow"
+                android:gravity="top|left"
+                android:hint="  Reason(Max 100 words)"
+                android:imeOptions="actionDone"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:textSize="14dp" />
+
+
+
+            <Button
+
+                android:id="@+id/submit"
+                android:textSize="14dp"
+                android:text="Submit"
+                android:textColor="@color/white1"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/lgonfeildbt"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp" />
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

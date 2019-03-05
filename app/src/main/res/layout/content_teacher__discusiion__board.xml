@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.Teacher_Discusiion_Board"
+    tools:showIn="@layout/activity_teacher__discusiion__board">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/teacher_messages_view"
+        android:layout_weight="2"
+        android:padding="10dp"
+        android:divider="#fff"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/teacher_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:hint="Write a message"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:textCursorDrawable="@drawable/cursor_drawable"
+            android:backgroundTint="#2F847C"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:padding="20dp"
+            android:id="@+id/teacher_sendmeassage"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/ic_menu_send"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="#5f3696"
+        android:textSize="8dp"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:layout_alignParentBottom="true"
+        android:text="Powered By Syon Technologies" />
+
+
+</LinearLayout>

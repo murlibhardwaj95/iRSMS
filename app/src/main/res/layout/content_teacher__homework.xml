@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_background"
+    android:scrollbars="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.Teacher_Homework"
+    tools:showIn="@layout/activity_teacher__homework">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/home_work_comp_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/homwworkdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:gravity="left"
+                        android:text="Home Work Date "
+                        android:textColor="#5f3696"
+                        android:textSize="@dimen/_11sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/completiondate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text=" Completion Date "
+                        android:textColor="#5f3696"
+                        android:textSize="@dimen/_11sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/selecthomeworkdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/select_date"
+                            android:editable="false"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:focusable="false"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:hint="Select date"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <ImageView
+                            android:id="@+id/cal1"
+                            android:layout_width="@dimen/_18sdp"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:src="@drawable/ic_perm_contact_calendar_black_24dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/selectcompletiondate"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_20sdp"
+                            android:layout_marginLeft="@dimen/_12sdp"
+                            android:layout_weight="1"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:background="@drawable/select_date"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:hint="Select date"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <ImageView
+                            android:id="@+id/cal2"
+                            android:layout_width="@dimen/_18sdp"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/_24sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:src="@drawable/ic_perm_contact_calendar_black_24dp" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/home_work_comp_bg"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/subjectspinn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Subject"
+                        android:textSize="@dimen/_11sdp"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spinnersubject"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_toRightOf="@id/subjectspinn"
+                        android:background="@drawable/class_subject_section_box"
+                        android:spinnerMode="dialog">
+
+                    </Spinner>
+
+                    <ImageView
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:src="@drawable/ic_spinner_arrow" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/classtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Class"
+                        android:textSize="@dimen/_11sdp"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spinnerclass"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_toRightOf="@id/classtext"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@drawable/class_subject_section_box"
+                        android:spinnerMode="dialog">
+
+                    </Spinner>
+
+                    <ImageView
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:src="@drawable/ic_spinner_arrow" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sectiontext"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Section"
+                        android:textSize="@dimen/_11sdp"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spinnersection"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_toRightOf="@+id/sectiontext"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@drawable/class_subject_section_box"
+                        android:spinnerMode="dialog">
+
+                    </Spinner>
+
+                    <ImageView
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:src="@drawable/ic_spinner_arrow" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_250sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:orientation="vertical"
+
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+
+                android:background="@drawable/description_bg">
+
+                <EditText
+                    android:id="@+id/homeworktitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="#FFFFFF"
+                    android:hint="Title"
+                    android:maxLines="2"
+                    android:minLines="1"
+                    android:imeOptions="actionDone"
+                    android:paddingLeft="@dimen/_15sdp" />
+
+                <EditText
+                    android:id="@+id/homeworkdiscription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                  android:layout_marginTop="@dimen/_5sdp"
+                    android:background="#FFFFFF"
+                    android:gravity="left"
+                    android:hint="Description "
+                    android:maxLines="5"
+                    android:minLines="5"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:imeOptions="actionDone"/>
+                <LinearLayout
+                    android:id="@+id/upol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:layout_marginTop="@dimen/_10sdp">
+                    <RelativeLayout
+                        android:id="@+id/attach"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/homeworkdiscription"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:gravity="center_horizontal"
+
+
+
+                        >
+
+
+                        <ImageView
+                            android:id="@+id/attach_file1"
+                            android:layout_width="20dp"
+                            android:layout_height="23dp"
+
+                            android:layout_marginLeft="@dimen/_25sdp"
+                            android:layout_marginTop="5dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/ic_attech" />
+
+                    </RelativeLayout>
+                    <EditText
+                        android:id="@+id/homeworkUpload"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:hint="select file"
+                        android:layout_weight="1"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:textSize="@dimen/_11sdp"
+                        />
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_28sdp"
+                    android:layout_below="@+id/attach4"
+                    android:orientation="horizontal">
+                   <!-- android:layout_marginTop="@dimen/_12sdp"-->
+                    <Button
+                        android:id="@+id/btn_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@drawable/activebtn"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:layout_marginRight="@dimen/_30sdp"
+                        android:text="View"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <Button
+                        android:id="@+id/btn_save"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:layout_marginRight="@dimen/_30sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/activebtn"
+                        android:text="Save"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_11sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

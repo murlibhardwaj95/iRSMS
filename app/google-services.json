@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "457807689289",
+    "firebase_url": "https://isrms-6077e.firebaseio.com",
+    "project_id": "isrms-6077e",
+    "storage_bucket": "isrms-6077e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457807689289:android:5cb86fa535dd446a",
+        "android_client_info": {
+          "package_name": "com.syon.isrms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457807689289-iuk9fjbkon26rqbpqft6nldaeevcgrvc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0II8aoz6W5r5bIQE-Gaeheb5oKNfTUV8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

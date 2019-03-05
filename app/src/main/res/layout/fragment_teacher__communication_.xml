@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/teachercommunicationframe"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Fragement.Teacher_Communication_Frag">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/black"
+        android:layout_marginTop="@dimen/_2sdp">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/adminusername"
+            android:text="User Name"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/admindesignation"
+            android:text="Designation"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/_11sdp"
+           android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/adminselect"
+            android:text="Select"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="@dimen/_10sdp"
+            android:textSize="@dimen/_11sdp"
+           android:textColor="@color/black"
+
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/black"
+        android:layout_marginBottom="@dimen/_2sdp">
+
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/teachercommunicationRecycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

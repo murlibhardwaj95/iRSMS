@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.Admin_Toppers_List_Web"
+    tools:showIn="@layout/activity_admin__toppers__list__web">
+
+    <WebView
+        android:id="@+id/adminTopperWebview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></WebView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="@color/Admin_theme"
+        android:textSize="8dp"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:layout_alignParentBottom="true"
+        android:text="Powered By Syon Technologies" />
+
+</LinearLayout>

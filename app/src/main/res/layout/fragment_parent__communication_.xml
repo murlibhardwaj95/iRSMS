@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragement.Parent_Communication_Frag">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/home_work_comp_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sectiontext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:text="Class"
+                android:textColor="#5F3696" />
+
+            <Spinner
+                android:id="@+id/classparent"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:layout_toRightOf="@id/sectiontext"
+                android:background="@drawable/class_subject_section_box"
+                android:paddingLeft="@dimen/_10sdp">
+
+            </Spinner>
+
+            <ImageView
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:src="@drawable/ic_spinner_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/classtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:text="Section"
+                android:textColor="#5F3696" />
+            <Spinner
+                android:id="@+id/sectionparent"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:layout_toRightOf="@id/classtext"
+                android:background="@drawable/class_subject_section_box"
+                android:paddingLeft="@dimen/_10sdp">
+
+            </Spinner>
+
+            <ImageView
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:src="@drawable/ic_spinner_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/black"
+            android:layout_marginTop="@dimen/_2sdp">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/adminno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="Adm No"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/parentusername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textSize="@dimen/_11sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="Father's Name "
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/studname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textSize="@dimen/_11sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="Student Name"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/parentselect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:gravity="left"
+                android:textSize="@dimen/_11sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="Select"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+             android:background="@color/black"
+            android:layout_marginBottom="@dimen/_2sdp">
+
+        </View>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/parentRecyclerCommunication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
+</LinearLayout>

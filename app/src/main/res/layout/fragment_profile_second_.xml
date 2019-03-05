@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/teachersendprofile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragement.Profile_second_Fragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/profilefirstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_230sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/details_bg"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/joining"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Joining"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/designation"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/joining"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Designation"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/department"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/designation"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Department"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/payscale"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/department"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Payscale"
+            android:textSize="@dimen/_10sdp"
+           android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/basic"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/payscale"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Basic"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/pf"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/basic"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="PF"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/esi"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/pf"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="ESI"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/editjoining"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/_9sdp"
+            android:editable="false"/>
+
+        <EditText
+            android:id="@+id/editdesignation"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/editjoining"
+            android:layout_marginLeft="@dimen/_70sdp"
+            android:layout_marginTop="1dp"
+            android:textSize="@dimen/_9sdp"
+            android:editable="false"
+            android:focusable="false"/>
+
+        <EditText
+            android:id="@+id/editdepartment"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/editdesignation"
+            android:layout_marginLeft="@dimen/_70sdp"
+            android:textSize="@dimen/_9sdp"
+            android:editable="false"
+            android:focusable="false"/>
+
+        <EditText
+            android:id="@+id/editpayscale"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/editdepartment"
+            android:layout_marginLeft="@dimen/_70sdp"
+            android:textSize="@dimen/_9sdp"
+            android:editable="false"
+            android:focusable="false"
+            />
+
+        <EditText
+            android:id="@+id/editbasic"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_below="@+id/editpayscale"
+            android:layout_marginLeft="@dimen/_70sdp"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/_9sdp"
+            android:focusable="false"/>
+
+        <EditText
+            android:id="@+id/editpf"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_below="@+id/editbasic"
+            android:layout_marginLeft="@dimen/_70sdp"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/_9sdp"
+            android:editable="false"
+            android:focusable="false"/>
+
+        <EditText
+            android:id="@+id/editesi"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_below="@+id/editpf"
+            android:layout_marginLeft="@dimen/_70sdp"
+            android:layout_alignParentRight="true"
+            android:hint="Not Applicable"
+            android:textSize="@dimen/_9sdp"
+            android:editable="false"
+            android:focusable="false"/>
+    </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

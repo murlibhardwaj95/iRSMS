@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:caldroid="http://schemas.android.com/aapt">
+
+    <!-- Caldroid days from prev and next month -->
+    <item android:color="@color/white1" caldroid:state_date_prev_next_month="true"/>
+
+    <!-- Caldroid days from current month -->
+    <item android:color="@color/black" />
+
+</selector>

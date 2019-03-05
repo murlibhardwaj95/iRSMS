@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@color/white1">
+
+        <Button
+            android:id="@+id/dateText"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_margin="@dimen/_1sdp"
+            android:background="#6E1B42"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white1"
+
+            ></Button>
+
+        <TextView
+            android:id="@+id/lableH"
+            android:layout_width="@dimen/_13sdp"
+            android:layout_height="@dimen/_13sdp"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:elevation="100dp"
+            android:text="H"
+            android:gravity="center"
+            android:textColor="#a67a21"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:background="@drawable/homework_circle"/>
+
+
+    </FrameLayout>
+
+</LinearLayout>

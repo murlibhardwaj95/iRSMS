@@ -1,0 +1,213 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_150sdp"
+    android:layout_margin="@dimen/_15sdp"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/_15sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_320sdp"
+        android:background="@drawable/contentbox_salary_slip"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                >
+
+                <TextView
+                    android:id="@+id/lblDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="April 2017"
+                    android:textColor="@color/white1"
+                    android:textSize="@dimen/_11sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+
+                <TextView
+                    android:id="@+id/lblWD"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    android:text="WD: "
+                    android:textColor="@color/white1"
+                    android:textSize="@dimen/_11sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Present"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp" />
+
+                <EditText
+                    android:id="@+id/setPresent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:ellipsize="end"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:focusable="false"
+                    android:lines="1"
+                    android:textSize="@dimen/_9sdp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    android:text="Absent"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                     />
+
+                <EditText
+                    android:id="@+id/setAbsent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:lines="1"
+                    android:textSize="@dimen/_9sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Duty Leave"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+
+
+                    />
+
+                <EditText
+                    android:id="@+id/setDutyLeave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:lines="1"
+                    android:textSize="@dimen/_9sdp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Leave"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/setLeave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:lines="1"
+                    android:textSize="@dimen/_9sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Leave Detail"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    />
+
+                <EditText
+                    android:id="@+id/setLeaveDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:ellipsize="end"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:focusable="false"
+                    android:lines="1"
+                    android:textSize="@dimen/_9sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

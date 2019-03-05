@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/sal_box"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_14sdp"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:padding="@dimen/_2sdp">
+
+            <ImageView
+                android:id="@+id/lblsalaryicon"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:scaleType="centerInside"
+                android:src="@drawable/head_salary_ic" />
+
+            <TextView
+                android:id="@+id/setMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:text="April 2017"
+                android:textColor="@color/white1"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/setWorkingDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:text="WD:30"
+                android:textColor="@color/white1"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Basic"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/setBasic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_6sdp"
+                    android:text="20.000"
+                    android:textSize="@dimen/_9sdp"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:focusable="false"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Allowance"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_weight="1"
+                    />
+
+                <EditText
+                    android:id="@+id/setAllowance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_6sdp"
+                    android:text="2000"
+                    android:textSize="@dimen/_9sdp"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:focusable="false"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gross Salary"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/setGrossSalary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_6sdp"
+                    android:text="12000"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_9sdp"
+                    android:editable="false"
+                    android:focusable="false"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deduction"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/setDeduction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_6sdp"
+                    android:text="8000"
+                    android:textSize="@dimen/_9sdp"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:focusable="false"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Net Salary"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/setNetSalary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_6sdp"
+                    android:text="16000"
+                    android:textSize="@dimen/_9sdp"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:focusable="false"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@android:color/darker_gray"></View>
+
+        <Button
+            android:id="@+id/getSlipAttechment"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/button_download"
+            android:text="Download"
+            android:textColor="@color/white1"
+            android:textSize="@dimen/_10sdp"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+

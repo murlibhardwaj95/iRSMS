@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_210sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:background="@drawable/orangeboxthree"
+        android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_8sdp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exam Date"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/_10sdp"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/dtExamDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+           android:editable="false"
+            android:focusable="false"
+            android:textSize="@dimen/_10sdp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exam Time"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginLeft="20dp"
+
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/sExamTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:editable="false"
+            android:focusable="false"
+            android:textSize="@dimen/_10sdp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WeekDay"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/_10sdp"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/sWeekDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:editable="false"
+            android:focusable="false"
+            android:textSize="@dimen/_10sdp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Subject"
+                android:textSize="@dimen/_10sdp"
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/sSubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:editable="false"
+                android:focusable="false"
+                android:textSize="@dimen/_10sdp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Paper"
+                android:textSize="@dimen/_10sdp"
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/sPaper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:editable="false"
+                android:focusable="false"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+</LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

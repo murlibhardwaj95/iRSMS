@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/_8sdp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/news_pink_box"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_10sdp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accession No"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"/>
+
+        <EditText
+            android:id="@+id/sBookCode"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_weight="1"
+            android:editable="false"
+            android:focusable="false"
+            android:text=""
+            android:textSize="@dimen/_9sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Book Title"
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/_11sdp"/>
+        <EditText
+            android:id="@+id/sBookTitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_28sdp"
+            android:text=""
+            android:editable="false"
+            android:focusable="false"
+            android:layout_marginLeft="@dimen/_32sdp"
+            android:textSize="@dimen/_9sdp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Issue Date"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            />
+        <EditText
+            android:id="@+id/sIssueDate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_28sdp"
+            android:text=""
+            android:editable="false"
+            android:focusable="false"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_weight="1"
+            android:textSize="@dimen/_9sdp"/>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Return Date"
+                android:layout_marginLeft="20dp"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/black"
+               />
+            <EditText
+                android:id="@+id/sReturnDate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_28sdp"
+                android:text=""
+                android:editable="false"
+                android:focusable="false"
+                android:layout_marginLeft="@dimen/_22sdp"
+                android:layout_weight="1"
+                android:textSize="@dimen/_9sdp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

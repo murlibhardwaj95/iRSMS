@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.Teacher_Result_Grafical_Details"
+    tools:showIn="@layout/activity_teacher__result__grafical__details">
+
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barchart"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="@dimen/_350sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_15sdp">
+
+    </com.github.mikephil.charting.charts.BarChart>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/colorline1"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_5sdp"
+    android:layout_below="@+id/barchart"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/color1"
+        android:textSize="10dp"
+        android:background="#405980"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hundred"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:layout_weight="1"
+        android:textSize="10dp"
+        android:text="91-100%"/>
+    <TextView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:textSize="10dp"
+        android:id="@+id/color2"
+        android:background="#C12552" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/ninty"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:text="81-90.99%"/>
+    <TextView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/color3"
+        android:textSize="10dp"
+        android:background="#FF6600" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/eighty"
+        android:textSize="10dp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="71-80.99%"/>
+    <TextView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/color4"
+        android:layout_marginBottom="10dp"
+        android:textSize="10dp"
+        android:background="#FFD08C" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/seventy"
+        android:textSize="10dp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="61-70.99%"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_below="@+id/colorline1"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/color5"
+        android:textSize="10dp"
+        android:background="#FFF78C"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/sixty"
+        android:textSize="10dp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="51-60.99%"/>
+    <TextView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/color6"
+        android:textSize="10dp"
+        android:background="#BF8686" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/fithty"
+        android:textSize="10dp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="41-50.99%"/>
+    <TextView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/color7"
+        android:textSize="10dp"
+        android:background="#6A961F" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/fourty"
+        android:textSize="10dp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="33-40.99%"/>
+    <TextView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/color8"
+        android:textSize="10dp"
+        android:background="#C0FF8C" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/fail"
+        android:textSize="10dp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="0-32.99%"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#5f3696"
+        android:gravity="center"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:text="Powered By Syon Technologies"
+        android:textColor="#ffffff"
+        android:textSize="8dp" />
+
+
+</RelativeLayout>

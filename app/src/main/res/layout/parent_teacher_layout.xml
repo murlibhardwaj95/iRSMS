@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/teacherusernametextparent"
+            android:text="User Name"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/_9sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:layout_gravity="center_vertical"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/teacherdesignationtextparent"
+            android:text="User Name"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/_8sdp"
+            android:ellipsize="end"
+            android:textSize="@dimen/_9sdp"
+            android:layout_gravity="center_vertical"
+
+            />
+
+        <CheckBox
+            android:id="@+id/teachercheckparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_8sdp"
+            />
+    </LinearLayout>
+</LinearLayout>

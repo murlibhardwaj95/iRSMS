@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.isrms.Home">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/header_bg"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    app:riv_corner_radius="30dip"
+                    app:riv_border_width="4dip"
+                    app:riv_border_color="#FFFFFF"
+                    app:riv_oval="true"
+                    android:src="@drawable/avtar"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/dpHeader"
+                    android:scaleType="fitXY"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp" />
+
+<!--
+                <TextView
+                    android:textColor="#000000"
+                    android:textSize="13dp"
+                    android:padding="5dp"
+                    android:textAlignment="center" android:background="@drawable/borderedittext1"
+                    android:layout_below="@+id/dpHeader"
+                    android:text="Notifications Goes here"
+                    android:layout_marginTop="22dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+-->
+
+
+
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/dpHeader"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/userNameHeader"
+                            android:textStyle="bold"
+                            android:textColor="@color/white1"
+                            android:textSize="13dp"
+                            android:layout_weight=".6"
+                            android:text="Rudra Sharma"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_lastseen"
+                        android:textColor="@color/white1"
+                        android:textSize="11dp"
+                        android:text="2018-2019"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_home" />
+
+
+</android.support.design.widget.CoordinatorLayout>

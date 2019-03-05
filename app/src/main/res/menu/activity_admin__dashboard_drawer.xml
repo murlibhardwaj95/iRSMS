@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_a_news"
+            android:icon="@drawable/news"
+            android:title="News/Events" />
+        <item
+            android:id="@+id/nav_a_circular"
+            android:icon="@drawable/circular1"
+            android:title="Circulars" />
+     <!--   <item
+            android:id="@+id/nav_a_time_table"
+            android:icon="@drawable/action_timetable"
+            android:title="Class Time Table" />-->
+        <item
+            android:id="@+id/nav_a_discussion"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Discussion Board" />
+      <!--  <item
+            android:id="@+id/nav_a_download"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Downloads" />
+-->
+        <item
+            android:id="@+id/nav_a_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Share" />
+        <item
+            android:id="@+id/nav_a_rate_us"
+            android:icon="@drawable/ic_rate_review"
+            android:title="Rate us" />
+        <item
+            android:id="@+id/nav_a_change_password"
+            android:icon="@drawable/change_password1"
+            android:title="Change Password" />
+    </group>
+
+
+
+
+
+</menu>

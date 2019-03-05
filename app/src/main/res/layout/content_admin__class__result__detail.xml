@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.Admin_Class_Result_Detail"
+    tools:showIn="@layout/activity_admin__class__result__detail">
+  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/graph_admin_class_Result_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.github.mikephil.charting.charts.BarChart>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#c0b9c9">
+
+            <TextView
+                android:id="@+id/setRange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="% Range"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/black"/>
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@color/black"></View>
+
+            <TextView
+                android:id="@+id/setLblAverageGrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Average Grade"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/black" />
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@color/black"></View>
+            <TextView
+                android:id="@+id/setLbLNoOfStudent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="No. of Students"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/admin_class_resultDeatilRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#c0b9c9"></View>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2F847C"
+        android:gravity="center"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:text="Powered By Syon Technologies"
+        android:textColor="#ffffff"
+        android:textSize="8dp" />
+
+
+</LinearLayout>

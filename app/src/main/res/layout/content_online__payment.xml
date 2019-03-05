@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.isrms.Activity.Online_Payment"
+    tools:showIn="@layout/activity_online__payment">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/datanotfound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgg"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/datanot"/>
+
+
+    </LinearLayout>
+
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+
+  <!--  <TextView
+        android:id="@+id/hea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="14dp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:text="&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;SELECT INSTALLMENT TO PAY&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"/>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_below="@+id/hea"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent"></ListView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/finalvalue"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#6E1C3F"
+            android:textColor="@color/white1"
+            android:text="Rs 0/- PayABle"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/pay_now"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="pay now"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white1"
+            android:background="#6E1C3F"
+            android:layout_weight="1"/>
+
+    </LinearLayout>-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="#AA531C"
+        android:textSize="8dp"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:layout_alignParentBottom="true"
+        android:text="Powered By Syon Technologies" />
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

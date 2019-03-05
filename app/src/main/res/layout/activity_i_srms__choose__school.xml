@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_background"
+    tools:context=".Activity.iSRMS_Choose_School">
+    <android.support.v7.widget.CardView
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_400sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_centerInParent="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ab853b">
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/syon_logo"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="choose school"
+                android:textSize="@dimen/_18sdp"
+                android:textColor="@color/black"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/schoolChooser_Recycler"
+            android:layout_width="match_parent"
+            android:background="@color/grayies"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

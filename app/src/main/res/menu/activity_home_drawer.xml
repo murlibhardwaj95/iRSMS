@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Teachers"
+            android:icon="@drawable/teacher"
+            android:title="My Teachers" />
+        <item
+            android:id="@+id/Observation"
+            android:icon="@drawable/obser"
+            android:title="Observation" />
+
+        <item
+            android:id="@+id/leave"
+            android:icon="@drawable/leaves"
+            android:title="Apply Leaves" />
+
+        <item
+            android:id="@+id/Tuckshop"
+            android:icon="@drawable/tuck"
+            android:title="Tuckshop" />
+
+        <item
+            android:id="@+id/nav_Cal"
+            android:icon="@drawable/eventcal"
+            android:title="Event Calendar" />
+
+
+        <item
+            android:id="@+id/nav_br"
+            android:icon="@drawable/birthday"
+            android:title="Birthday" />
+        <item
+            android:id="@+id/Vehicle"
+            android:icon="@drawable/tracking"
+            android:title="Vehicle Tracking" />
+
+        <item
+            android:id="@+id/nav_meeting"
+            android:icon="@drawable/meeting"
+            android:title="Communication" />
+
+        <item
+            android:id="@+id/nav_sms"
+            android:icon="@drawable/sms"
+            android:title="SMS Log" />
+
+        <item
+        android:id="@+id/nav_p_notification"
+        android:icon="@drawable/notificationsbutton"
+        android:title="Notifications" />
+
+        <item
+            android:id="@+id/nav_p_add_account"
+            android:icon="@drawable/ic_person_add_black_24dp"
+            android:title="Change Account" />
+
+        <item
+            android:id="@+id/nav_schoolwebsite"
+            android:icon="@drawable/ic_web"
+            android:title="School Website" />
+        <item
+            android:id="@+id/nav_facebook"
+            android:icon="@drawable/ic_social_media"
+            android:title="School Facebook Page" />
+
+
+        <item
+            android:id="@+id/nav_p_downloads"
+            android:icon="@drawable/ic_file_download"
+            android:title="Downloads" />
+
+        <item android:id="@+id/nav_p_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Share"
+            ></item>
+        <item android:id="@+id/nav_p_rating"
+            android:icon="@drawable/ic_rate_review"
+            android:title="Rate us"
+            ></item>
+
+        <item
+            android:id="@+id/change_pass"
+            android:icon="@drawable/lock"
+            android:title="Change Password" />
+        <item
+            android:id="@+id/change_as"
+            android:title=""
+/>
+
+
+
+        <!--
+                <item
+                    android:icon="@drawable/settingsworktool"
+                    android:title="Settings" />
+        -->
+<!--
+        <item
+            android:icon="@drawable/logoutt"
+            android:title="Logout" />
+-->
+
+    </group>
+
+<!--
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+-->
+
+</menu>

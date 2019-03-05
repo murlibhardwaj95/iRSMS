@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.Teacher_Salary_Slip"
+    tools:showIn="@layout/activity_teacher__salary__slip">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/salary_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TabItem
+                android:id="@+id/current_session_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Session"/>
+            <android.support.design.widget.TabItem
+                android:id="@+id/previous_session_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Previous Session"
+                />
+        </android.support.design.widget.TabLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_salary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="#5f3696"
+        android:textSize="8dp"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:layout_alignParentBottom="true"
+        android:text="Powered By Syon Technologies" />
+
+</RelativeLayout>

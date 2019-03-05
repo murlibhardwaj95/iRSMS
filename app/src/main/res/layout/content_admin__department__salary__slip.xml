@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.Admin_Department_Salary_Slip"
+    tools:showIn="@layout/activity_admin__department__salary__slip">
+
+    <TextView
+        android:id="@+id/department"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_3sdp"
+        android:paddingLeft="@dimen/_3sdp"
+        android:text="Department"
+        android:background="@color/bg_gray"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11sdp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@+id/department"
+        android:background="@color/black">
+
+    </View>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalscrolls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/department"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:scrollbars="horizontal">
+
+            <TextView
+                android:id="@+id/basic"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/months"
+                android:paddingTop="@dimen/_5sdp"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:text="Basic"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/allownace"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/basic"
+                android:paddingTop="@dimen/_5sdp"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:text="Allowance"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/gross"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/allownace"
+                android:paddingTop="@dimen/_5sdp"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:text="Gross Salary"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/deduction"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/gross"
+                android:paddingTop="@dimen/_5sdp"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:text="Deduction"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/net"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/deduction"
+                android:paddingTop="@dimen/_5sdp"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:text="Net Salary"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+        </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/department_salary_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/department"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:paddingTop="@dimen/_3sdp">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/department_name-recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horizontalscrolls"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:paddingTop="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_20sdp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@id/department_name-recycler"
+        android:background="@color/black">
+    </View>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="@color/Admin_theme"
+        android:textSize="8dp"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:layout_alignParentBottom="true"
+        android:text="Powered By Syon Technologies" />
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.Admin_Result_Analysis"
+    tools:showIn="@layout/activity_admin__result__analysis">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/admin_result_analysis_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/Admin_theme"
+            app:tabSelectedTextColor="@color/black"
+            >
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab_class_result_analysis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class Result Analysis"
+                android:textColor="#A9A9A9"
+                android:textSize="@dimen/_12sdp"
+                />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab_teacher_result_analysis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teacher Result Analysis"
+                android:textColor="#A9A9A9"
+                android:textSize="@dimen/_10sdp" />
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpagerAdminResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          ></android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2F847C"
+        android:gravity="center"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:text="Powered By Syon Technologies"
+        android:textColor="#ffffff"
+        android:textSize="8dp" />
+
+
+</LinearLayout>

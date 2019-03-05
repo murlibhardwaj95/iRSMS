@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.Admin_Monthly_Salary_Summary"
+    tools:showIn="@layout/activity_admin__monthly__salary__summary">
+
+
+    <TextView
+        android:id="@+id/months"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:text="Months"
+        android:background="@color/bg_gray"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11sdp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@id/months"
+        android:background="@color/black">
+    </View>
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalscrolls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/months"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:scrollbars="horizontal">
+
+            <TextView
+                android:id="@+id/basic"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/months"
+                android:paddingTop="@dimen/_5sdp"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:text="Basic"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/allownace"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/basic"
+                android:paddingTop="@dimen/_5sdp"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:text="Allowance"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/gross"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/allownace"
+                android:paddingTop="@dimen/_5sdp"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:text="Gross Salary"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/deduction"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/gross"
+                android:paddingTop="@dimen/_5sdp"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:text="Deduction"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/net"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/deduction"
+                android:paddingTop="@dimen/_5sdp"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:text="Net Salary"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/net"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_2sdp"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:text="Details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/monthly_salary_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/months"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="3dp">
+
+        </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/months"
+        android:id="@+id/month_recyclerView"
+        android:layout_marginTop="@dimen/_3sdp">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+                                 <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@id/horizontalscrolls"
+        android:background="@color/black">
+    </View>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/Admin_theme"
+        android:gravity="center"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:text="Powered By Syon Technologies"
+        android:textColor="#ffffff"
+        android:textSize="8dp" />
+
+</RelativeLayout>

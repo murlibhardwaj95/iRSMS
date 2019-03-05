@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.isrms.Activity.Fees_Info"
+    tools:showIn="@layout/activity_fees__info"
+    android:background="@drawable/bcc">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:tabIndicatorHeight="2dp"
+        app:tabIndicatorColor="#A14D3F"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+
+        >
+
+
+    </android.support.design.widget.TabLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="DUE AMOUNT"
+            android:textSize="10dp"
+            android:textColor="@color/white1"
+            android:background="#6F1949"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="PAID AMOUNT"
+            android:textSize="10dp"
+            android:textColor="@color/white1"
+            android:background="#6F1949"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#6F1949"
+            android:text="BALANCE AMOUNT"
+            android:textSize="10dp"
+            android:textColor="@color/white1"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/bt_due"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="1500 RS/-"
+            android:textSize="12dp"
+            android:textColor="@color/white1"
+            android:background="#F6770C"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/bt_paid"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#F6770C"
+            android:textColor="@color/white1"
+            android:text="1500 RS/-"
+            android:textSize="12dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/bt_bal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#F6770C"
+            android:textSize="12dp"
+            android:text="1500 RS/-"
+            android:textColor="@color/white1"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#AA531C"
+                android:gravity="center"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="Powered By Syon Technologies"
+                android:textColor="#ffffff"
+                android:textSize="8dp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

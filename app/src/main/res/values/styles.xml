@@ -1,0 +1,115 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#5F3696</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#5f3696</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.ActionBar" parent="Widget.AppCompat.Light.ActionBar">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabBackground">@drawable/background</item>
+    </style>
+
+    <style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <!-- Dark theme. -->
+    <style name="CaldroidDefaultDark" parent="CaldroidDefault">
+        <item name="styleCaldroidViewLayout">@style/CaldroidDefaultDarkCalendarViewLayout</item>
+        <item name="styleCaldroidMonthName">@style/CaldroidDefaultDarkMonthName</item>
+        <item name="styleCaldroidNormalCell">@style/CaldroidDefaultDarkNormalCell</item>
+        <item name="styleCaldroidSquareCell">@style/CaldroidDefaultDarkSquareCell</item>
+        <item name="styleCaldroidGridView">@style/CaldroidDefaultDarkGridView</item>
+    </style>
+
+    <style name="CaldroidDefaultDarkCalendarViewLayout">
+        <item name="android:background">@android:color/black</item>
+    </style>
+
+    <style name="CaldroidDefaultDarkMonthName" parent="CaldroidDefaultMonthName">
+        <item name="android:textColor">@color/caldroid_white</item>
+    </style>
+
+    <style name="CaldroidDefaultDarkGridView" parent="CaldroidDefaultGridView">
+        <item name="android:background">@color/caldroid_middle_gray</item>
+    </style>
+
+    <style name="CaldroidDefaultDarkCell" parent="CaldroidDefaultCell">
+        <item name="android:textColor">@color/cell_text_color_dark</item>
+        <item name="android:background">@drawable/cell_bg_dark</item>
+    </style>
+
+    <style name="CaldroidDefaultDarkNormalCell" parent="CaldroidDefaultDarkCell">
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="CaldroidDefaultDarkSquareCell" parent="CaldroidDefaultDarkCell" />
+
+    <style name="MyCaldroid" parent="CaldroidDefault">
+        <!--If you use compact view in Caldroid -->
+        <item name="styleCaldroidNormalCell">@style/CaldroidCell</item>
+
+        <!-- If you use square (default) view in Caldroid-->
+        <item name="styleCaldroidSquareCell">@style/CaldroidCell</item>
+    </style>
+
+    <style name="CaldroidCell" parent="CaldroidDefaultCell">
+        <item name="android:textColor">@drawable/calendar_cell_text_color</item>
+    </style>
+
+
+    <!--  //calender Style-->
+    <style name="MonthPickerDialogStyle">
+
+
+        <item name="headerBgColor">#A14D3F</item>
+        <item name="headerFontColorSelected">#fff</item>
+        <item name="headerFontColorNormal">#85FFFFFF</item>
+        <item name="headerTitleColor">#fff</item>
+        <item name="monthBgSelectedColor">#A14D3F</item>
+
+        <item name="dialogActionButtonColor">#A14D3F</item>
+    </style>
+
+
+    <style name="FilePickerTheme" parent="NNF_BaseTheme">
+        <!-- Set these to match your theme -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Setting a divider is entirely optional -->
+        <item name="nnf_list_item_divider">?android:attr/listDivider</item>
+
+        <!-- Need to set this also to style create folder dialog -->
+        <item name="alertDialogTheme">@style/FilePickerAlertDialogTheme</item>
+
+        <!-- If you want to set a specific toolbar theme, do it here -->
+        <!-- <item name="nnf_toolbarTheme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item> -->
+    </style>
+
+    <style name="FilePickerAlertDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.Teacher_Dashboard"
+    tools:showIn="@layout/app_bar_teacher__dashboard">
+
+    <LinearLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_75sdp"
+        android:background="@drawable/banner"
+        android:orientation="vertical"></LinearLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/teacherPic"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_75sdp"
+        android:layout_marginStart="@dimen/_118sdp"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:padding="@dimen/_5sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/avtar"
+        app:riv_border_color="#FFFFFF"
+        app:riv_corner_radius="30dip"
+        app:riv_oval="true"
+        app:riv_border_width="4dip"/>
+
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_minus10sdp">
+
+        <TextView
+            android:id="@+id/teacherName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_42sdp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp" />
+
+        <TextView
+            android:id="@+id/teacherDesignation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/_9sdp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/griddata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/info"
+        android:layout_marginTop="@dimen/_10sdp">
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/icon_background"
+            android:columnWidth="2dp"
+            android:horizontalSpacing="@dimen/_10sdp"
+            android:numColumns="3"
+            android:layout_gravity="center_vertical"
+            android:paddingVertical="@dimen/_2sdp"
+            android:gravity="center_vertical"
+            android:verticalSpacing="@dimen/_minus2sdp"
+
+            />
+    </LinearLayout>
+
+    <!--
+        <FrameLayout
+            android:id="@+id/containerHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>-->
+    <!--
+        <LinearLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:background="@drawable/banner">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/teacherPic"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/teacher_pic"
+                    app:riv_border_color="#FFFFFF"
+                    app:riv_corner_radius="30dip"
+                    app:riv_oval="true"
+                    android:padding="@dimen/_5sdp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/teacherProfileInfo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:background="@drawable/icon_background"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/teacherName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Nirmalla Devi Sharma"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/teacherDesignation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Designation Goes Here"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/icon_background"
+                android:columnWidth="2dp"
+                android:horizontalSpacing="15dp"
+                android:numColumns="3"
+                android:verticalSpacing="5dp" />
+
+
+        </LinearLayout>
+    -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="#5f3696"
+        android:textSize="8dp"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:layout_alignParentBottom="true"
+        android:text="Powered By Syon Technologies" />
+</RelativeLayout>

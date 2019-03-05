@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="@dimen/_8sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_offers"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    app:civ_border_color="#DFA61B"
+                    app:civ_border_width="1dp"
+                    android:src="@drawable/newslogo" />
+
+
+                <LinearLayout
+                    android:id="@+id/lll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_weight="1"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:singleLine="true"
+                            android:text="okkkkk"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp"/>
+
+                        <ImageView
+                            android:id="@+id/removetocart"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/download" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:text="okkkkk"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                    <!--
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="85dp"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:paddingBottom="5dp"
+                                    android:paddingTop="5dp"
+                                    android:layout_weight="1"
+                                    android:text="Product Quantity"
+                                    android:textColor="@color/font"
+                                    android:textSize="12dp" />
+
+
+                                <TextView
+                                    android:id="@+id/offerDesc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="85dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:paddingBottom="5dp"
+                                    android:paddingTop="5dp"
+                                    android:text="description"
+                                    android:textColor="@color/font"
+                                    android:textSize="12dp" />
+
+                            </LinearLayout>
+                    -->
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="5dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:minLines="3"
+            android:paddingLeft="@dimen/_6sdp"
+            android:paddingTop="10dp"
+            android:text="okkkkk"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp" />
+
+
+        <!--
+                    <CheckBox
+                        android:layout_centerVertical="true"
+                        android:id="@+id/checkbox"
+                        android:layout_toLeftOf="@+id/removetocart"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content" />
+        -->
+
+        <View
+            android:id="@+id/viewnewss"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="#7d000000"
+            android:paddingLeft="@dimen/_6sdp"
+            android:visibility="visible">
+
+        </View>
+        <TextView
+            android:id="@+id/readmorenews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="READ MORE >>"
+            android:textColor="#dc6928"
+            android:textSize="12dp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

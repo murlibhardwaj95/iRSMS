@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.Teacher_Profile"
+    tools:showIn="@layout/activity_teacher__profile">
+    <LinearLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_75sdp"
+        android:background="@drawable/banner"
+        android:orientation="vertical"></LinearLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/dpHeader"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_75sdp"
+        android:layout_marginStart="@dimen/_118sdp"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:padding="@dimen/_5sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avtar"
+        app:riv_border_color="#FFFFFF"
+        app:riv_border_width="4dip"
+        app:riv_corner_radius="30dip"
+        app:riv_oval="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/teacherProfileInfo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_below="@+id/dpHeader"
+        android:layout_marginTop="@dimen/_minus5sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/userNameHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp" />
+
+        <TextView
+            android:id="@+id/teacher_Designation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/_9sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewPagerLinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/teacherProfileInfo"
+        android:layout_marginTop="@dimen/_minus5sdp"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            app:tabBackground="@drawable/custom_button"
+            app:tabIndicatorColor="@android:color/transparent"
+            app:tabSelectedTextColor="@color/white1"
+            >
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/person_info"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/activebtn"
+                android:paddingTop="@dimen/_10sdp"
+                android:text="PERSONAL DETAIL"
+                android:textAlignment="center"
+                android:textColor="@color/white1"
+                android:textSize="@dimen/_12sdp"
+                />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/otherinfo"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/personinfo"
+                android:background="@drawable/de_active_gray_btn"
+                android:paddingTop="@dimen/_10sdp"
+                android:text="OHTER DETAIL"
+                android:textAlignment="center"
+                android:textColor="#A9A9A9"
+                android:textSize="@dimen/_12sdp" />
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpagerProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_background"></android.support.v4.view.ViewPager>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="#5f3696"
+        android:textSize="8dp"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:layout_alignParentBottom="true"
+        android:text="Powered By Syon Technologies" />
+    <!-- <LinearLayout
+         android:id="@+id/banner"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical"
+         android:background="@drawable/icon_background">
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/_100sdp"
+             android:background="@drawable/banner">
+
+             <com.makeramen.roundedimageview.RoundedImageView
+                 android:id="@+id/dpHeader"
+                 android:layout_width="@dimen/_80sdp"
+                 android:layout_height="@dimen/_80sdp"
+                 android:layout_alignParentBottom="true"
+                 android:layout_centerHorizontal="true"
+                 android:scaleType="centerCrop"
+                 android:src="@drawable/teacher_pic"
+                 app:riv_oval="true" />
+         </RelativeLayout>
+
+         <LinearLayout
+             android:id="@+id/teacherProfileInfo"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/_45sdp"
+             android:background="@drawable/icon_background"
+
+             android:orientation="vertical">
+
+             <TextView
+                 android:id="@+id/userNameHeader"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:text="Nirmalla Devi Sharma"
+                 android:textColor="@color/black"
+                 android:textSize="@dimen/_12sdp" />
+
+             <TextView
+                 android:id="@+id/teacher_Designation"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:text="Designation Goes Here"
+                 android:textSize="@dimen/_10sdp" />
+         </LinearLayout>
+
+         <android.support.design.widget.TabLayout
+             android:id="@+id/tablayout"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="@dimen/_10sdp"
+             android:layout_marginRight="@dimen/_10sdp"
+             app:tabSelectedTextColor="@color/white1"
+             app:tabBackground="@drawable/custom_button"
+             app:tabIndicatorColor="@android:color/transparent">
+             <android.support.design.widget.TabItem
+                 android:id="@+id/person_info"
+                 android:layout_width="@dimen/_190sdp"
+                 android:layout_height="@dimen/_45sdp"
+                 android:layout_marginLeft="@dimen/_10sdp"
+                 android:layout_marginTop="@dimen/_5sdp"
+                 android:background="@drawable/activebtn"
+                 android:paddingTop="@dimen/_10sdp"
+                 android:text="PERSONAL DETAIL"
+                 android:textAlignment="center"
+                 android:textColor="@color/white1"
+                 android:textSize="@dimen/_12sdp"
+                 android:layout_marginStart="@dimen/_5sdp"
+                 />
+
+             <android.support.design.widget.TabItem
+                 android:id="@+id/otherinfo"
+                 android:layout_width="@dimen/_210sdp"
+                 android:layout_height="@dimen/_45sdp"
+                 android:layout_marginRight="@dimen/_10sdp"
+                 android:layout_marginTop="@dimen/_5sdp"
+                 android:layout_toRightOf="@+id/personinfo"
+                 android:background="@drawable/deactivebtn"
+                 android:paddingTop="@dimen/_10sdp"
+                 android:text="OHTER DETAIL"
+                 android:textAlignment="center"
+                 android:textColor="#A9A9A9"
+                 android:textSize="@dimen/_12sdp" />
+         </android.support.design.widget.TabLayout>
+         <android.support.v4.view.ViewPager
+             android:id="@+id/viewpagerProfile"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/icon_background"></android.support.v4.view.ViewPager>
+
+     </LinearLayout>-->
+
+
+</RelativeLayout>

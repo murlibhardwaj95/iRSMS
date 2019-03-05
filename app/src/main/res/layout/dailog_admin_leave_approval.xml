@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_250sdp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:padding="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@color/white1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/applystatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#a7551f"
+            android:singleLine="true"
+            android:textAlignment="textStart"
+            android:text="Approval Status"
+            android:src="@drawable/mailicon"/>
+
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5"
+            android:padding="5dp"
+            android:src="@drawable/cancelicon"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000000">
+
+    </View>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiogroupleave">
+
+                <RadioButton
+                    android:id="@+id/rdapprove"
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="Approved"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_11sdp"/>
+
+                <RadioButton
+                    android:id="@+id/rdnotapprove"
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_11sdp"
+                    android:text="Not Approved"
+                  />
+
+                <RadioButton
+                    android:id="@+id/rdpending"
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Pending"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="#000000" />
+            </RadioGroup>
+            <Button
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:id="@+id/donedailog"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/shape_two"
+                android:textColor="@color/white"
+                android:text="Done"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

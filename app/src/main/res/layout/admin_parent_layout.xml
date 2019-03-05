@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/adstudentadminno"
+            android:text="User Name"
+            android:gravity="left"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:textSize="@dimen/_9sdp"
+            android:paddingLeft="@dimen/_5sdp"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/adparentusernametext"
+            android:text="User Name"
+            android:gravity="left"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:paddingLeft="@dimen/_33sdp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:textSize="@dimen/_9sdp"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/adstudentnametext"
+            android:text="User Name"
+            android:gravity="left"
+            android:paddingLeft="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:ellipsize="end"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:textSize="@dimen/_9sdp"
+
+            />
+
+        <CheckBox
+            android:id="@+id/adstudentcheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:checked="false"
+            android:gravity="right"
+            android:textColorLink="@android:color/background_light"
+            tools:textColorLink="@color/black"
+            />
+    </LinearLayout>
+</LinearLayout>

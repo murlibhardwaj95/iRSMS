@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <!--        <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#EBEBEB"
+                        android:padding="6dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:padding="4dp"
+                            android:textSize="12dp"
+                            android:text="FEE HEAD"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="5dp"
+                            android:singleLine="true"
+                            android:padding="4dp"
+                            android:textSize="12dp"
+                            android:text="DUE"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:padding="4dp"
+                            android:layout_marginLeft="5dp"
+                            android:singleLine="true"
+                            android:text="PAID"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:singleLine="true"
+                            android:layout_marginLeft="5dp"
+                            android:padding="4dp"
+                            android:text="BALANCE"/>
+
+                    </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EBEBEB"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/sFHeadName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="TUTION FEE"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/due"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="RS 500/-"
+                    android:gravity="center"
+                    android:textSize="12dp" />
+
+
+                <TextView
+                    android:id="@+id/paid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="RS 500/-"
+                    android:gravity="center"
+                    android:textSize="12dp" />
+
+
+                <TextView
+                    android:id="@+id/bal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="RS 500/-"
+                    android:textSize="12dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#EBEBEB"
+                    android:padding="6dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="12dp"
+                        android:singleLine="true"
+                        android:text="ADMISSION FEE"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="12dp"
+                        android:singleLine="true"
+                        android:text="RS 500/-"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:text="RS 500/-"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="12dp"
+                        android:singleLine="true"
+                        android:text="RS 500/-"/>
+
+                </LinearLayout>
+        -->
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

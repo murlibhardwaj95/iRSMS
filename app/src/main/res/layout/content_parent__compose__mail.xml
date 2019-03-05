@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.Parent_Compose_Mail"
+    tools:showIn="@layout/activity_parent__compose__mail">
+    <android.support.v7.widget.CardView
+        android:layout_width="@dimen/_275sdp"
+        android:layout_height="@dimen/_375sdp"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/fromtextparent"
+                android:layout_width="@dimen/_210sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:editable="false"
+                android:focusable="false"
+                android:inputType="textPersonName"
+                android:text="ANJU JAIDEEP "
+                android:textColorLink="#A14D3F"
+                android:textSize="@dimen/_11sdp" />
+
+            <LinearLayout
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/totextparent"
+                    android:layout_width="@dimen/_170sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_35sdp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:inputType="textPersonName"
+                    android:hint="Select Contact"
+                    android:textColorLink="#A14D3F"
+                    android:textSize="@dimen/_11sdp" />
+
+                <ImageView
+                    android:id="@+id/getparent"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:src="@drawable/ic_person_add_black_24dp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/subjecttextparent"
+                android:layout_width="@dimen/_210sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_35sdp"
+                android:hint="Subject"
+                android:maxLength="100"
+                android:inputType="textAutoCorrect|textAutoComplete"
+                android:textColorLink="#A14D3F"
+                android:textSize="@dimen/_11sdp" />
+
+            <EditText
+                android:id="@+id/descriptiontextparent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_marginLeft="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="top|left"
+                android:hint="Description"
+                android:textSize="@dimen/_11sdp"
+                android:inputType="textMultiLine|textAutoCorrect|textAutoComplete"
+                android:maxLength="500"
+                android:textColorLink="#A14D3F" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+                <ImageButton
+                    android:id="@+id/btn_upload"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/ic_attach_file_black_24dp"
+                    android:scaleType="center"
+                    android:layout_marginLeft="@dimen/_40sdp"
+                    android:layout_gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/file_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/resetcommunicationparentparent"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginLeft="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textColor="@color/white1"
+                    android:background="@drawable/shape_two"
+                    android:text="Reset" />
+
+                <Button
+                    android:id="@+id/submitcommunicationparent"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textColor="@color/white1"
+                    android:background="@drawable/shape_two"
+                    android:text="Send" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="#AA531C"
+        android:textSize="8dp"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:layout_alignParentBottom="true"
+        android:text="Powered By Syon Technologies" />
+
+</RelativeLayout>

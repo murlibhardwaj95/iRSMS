@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/_3sdp"
+    android:paddingTop="@dimen/_2sdp"
+    android:layout_height="@dimen/_35sdp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/adminclass"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+           android:paddingLeft="@dimen/_10sdp"
+            android:text="I"
+
+            android:textSize="@dimen/_11sdp"/>
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/grayies">
+        </View>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/adminexam"
+            android:textColor="@color/lite_blue"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="P I"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/_11sdp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/grayies">
+    </View>
+</LinearLayout>

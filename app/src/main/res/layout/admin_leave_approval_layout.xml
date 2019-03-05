@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:background="@color/bg_gray">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/_12sdp"
+        android:paddingRight="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:paddingTop="@dimen/_12sdp"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/firstlayuout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_gray"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/applicationno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:text="Application No :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/appno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:editable="false"
+                android:focusable="false"
+                android:paddingLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_9sdp" />
+
+            <TextView
+                android:id="@+id/applicatiodate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:text="Date :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/appdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:editable="false"
+                android:focusable="false"
+                android:paddingLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_9sdp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view1admin"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/black"
+            android:layout_below="@+id/firstlayuout"
+            android:layout_marginTop="@dimen/_2sdp">
+
+        </View>
+
+        <TextView
+            android:id="@+id/employeename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1admin"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Emp Name :"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/empname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstlayuout"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/employeename"
+            android:editable="false"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_9sdp" />
+
+        <TextView
+            android:id="@+id/leavedate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/employeename"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Leave Date :"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ldate"
+            android:layout_width="@dimen/_145sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/employeename"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:focusable="false"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/employeename"
+            android:editable="false"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_9sdp" />
+
+        <TextView
+            android:id="@+id/days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/employeename"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_toRightOf="@+id/ldate"
+            android:text="Days :"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/daysedit"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/employeename"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:focusable="false"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/days"
+            android:editable="false"
+            android:paddingLeft="@dimen/_5sdp"
+            android:textSize="@dimen/_9sdp" />
+
+        <EditText
+            android:id="@+id/daysedit2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/daysedit"
+            android:layout_marginLeft="@dimen/_65sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:editable="false"
+            android:focusable="false"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_9sdp" />
+
+        <TextView
+            android:id="@+id/resaon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/daysedit2"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Reason :"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/resaondata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/daysedit2"
+            android:layout_marginLeft="@dimen/_65sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:editable="false"
+            android:focusable="false"
+            android:inputType="text|textMultiLine|textCapSentences"
+            android:maxLines="3"
+            android:minLines="3"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_9sdp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/resaondata"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/bg_gray">
+
+        </View>
+
+        <TextView
+            android:id="@+id/approvestatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view2"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Approve Status :"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/spinnertwo"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view2"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/approvestatus"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_11sdp"/>
+
+        <ImageButton
+            android:id="@+id/addstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view2"
+            android:src="@drawable/ic_add_circle"
+            android:layout_toRightOf="@+id/spinnertwo" />
+
+        <TextView
+            android:id="@+id/remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnertwo"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Remark :"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/remak1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnertwo"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toRightOf="@id/remark"
+            android:singleLine="true"
+            android:inputType="text|textMultiLine|textCapSentences"
+            android:maxLines="3"
+            android:minLines="2"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_9sdp" />
+
+        <Button
+            android:id="@+id/submitleave"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@id/remak1"
+            android:background="@drawable/shape_two"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Submit" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

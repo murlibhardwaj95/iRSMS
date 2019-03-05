@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.Admin_Communocation_Mail_List"
+    tools:showIn="@layout/activity_admin__communocation__mail__list">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/alllayout"
+            android:orientation="vertical">
+            <android.support.design.widget.TabLayout
+                android:id="@+id/adcomposetab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorColor="@color/Admin_theme">
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Teacher" />
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parent" />
+            </android.support.design.widget.TabLayout>
+            <android.support.v4.view.ViewPager
+                android:id="@+id/admin_communication_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_below="@id/composetab">
+
+            </android.support.v4.view.ViewPager>
+
+            <Button
+                android:id="@+id/addonebutton"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:background="@drawable/shape_two"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:layout_below="@+id/communication_view_pager"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:text="Done" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/Admin_theme"
+            android:id="@+id/syon"
+            android:gravity="center"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="Powered By Syon Technologies"
+            android:textColor="#ffffff"
+            android:textSize="8dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

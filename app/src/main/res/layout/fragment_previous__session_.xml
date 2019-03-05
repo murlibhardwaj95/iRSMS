@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame1"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragement.Previous_Session_Fragment"
+    >
+    <ImageView
+        android:id="@+id/teacher_data_not_found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/data_not_found_second"
+        android:scaleType="centerInside"
+        android:visibility="gone"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/previous_session_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/icon_background"></android.support.v7.widget.RecyclerView>
+
+
+</FrameLayout>

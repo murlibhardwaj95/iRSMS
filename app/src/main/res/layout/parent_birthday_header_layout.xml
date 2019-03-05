@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/birthday_parent_compress"
+        android:orientation="horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/birthdayphoto"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_38sdp"
+            android:src="@drawable/avtar"
+            app:riv_oval="true" />
+
+        <TextView
+            android:id="@+id/birthday_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_toRightOf="@+id/birthdayphoto"
+            android:text="Name"
+
+            android:textColor="#f97903"
+            android:textSize="@dimen/_11sdp" />
+
+
+        <!--<LinearLayout
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:padding="@dimen/_10sdp"
+            >
+
+        </LinearLayout>
+-->
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/date_bar_parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/birthdaydate"
+            android:textSize="@dimen/_10sdp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowRadius="2"
+            android:text="date"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

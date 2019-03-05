@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_corner"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/sFeeBook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#BBBBBB"
+                android:drawableLeft="@drawable/ic"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:text="RECEIPT INFO" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EBEBEB"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_9sdp"
+                    android:text="RECEIPT NO:" />
+
+                <TextView
+                    android:id="@+id/rc_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/_9sdp"
+                    android:layout_weight="1"
+                    android:text="" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/_9sdp"
+                    android:text="DATE:" />
+
+                <TextView
+                    android:id="@+id/rc_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_9sdp"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EBEBEB"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_9sdp"
+                    android:text="PAY MODE:" />
+
+                <TextView
+                    android:id="@+id/rc_p_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_9sdp"
+                    android:text="" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/_9sdp"
+                    android:text="PAID:" />
+
+                <TextView
+                    android:id="@+id/rc_paid_Am"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_9sdp"
+                    android:text="" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EBEBEB"
+                android:orientation="horizontal"
+                android:padding="@dimen/_18sdp">
+
+                <!--      <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:textColor="@color/white1"
+                android:background="@drawable/shape"
+                android:text="print"/>-->
+
+                <Button
+                    android:id="@+id/detail"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:background="@drawable/shape_two"
+                    android:text="detail"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@color/white1" />
+
+                <Button
+                    android:id="@+id/print"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_50sdp"
+                    android:layout_toRightOf="@+id/detail"
+                    android:background="@drawable/shape_two"
+                    android:text="Print"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@color/white1"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

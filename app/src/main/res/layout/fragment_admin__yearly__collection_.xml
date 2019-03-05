@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Fragement.Admin_Yearly_Collection_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/piecollection"
+                android:layout_width="@dimen/_280sdp"
+                android:textAlignment="center"
+                android:layout_marginLeft="@dimen/_21sdp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_15sdp">
+
+            </com.github.mikephil.charting.charts.PieChart>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="horizontal">
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    android:background="@color/bg_gray">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:text="Rs "
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_9sdp" />
+
+                            <EditText
+                                android:id="@+id/proectussalerate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="sale"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_weight="1"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:textSize="@dimen/_11sdp" />
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/prospectussalecollection"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="Prospectus Sale"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_9sdp" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    android:background="@color/bg_gray">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:text="Rs "
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_9sdp" />
+
+                            <EditText
+                                android:id="@+id/fee"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="sale"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_weight="1"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:textSize="@dimen/_11sdp" />
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/feetext"
+                            android:text="Fee"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_9sdp"/>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="horizontal">
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    android:background="@color/bg_gray">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:text="Rs "
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_9sdp" />
+
+                            <EditText
+                                android:id="@+id/specialfee"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="sale"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_weight="1"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:textSize="@dimen/_11sdp" />
+                        </LinearLayout>
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/specialfeetext"
+                            android:text="Special Fee"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_9sdp"/>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    android:background="@color/bg_gray">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:text="Rs "
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_9sdp" />
+
+                            <EditText
+                                android:id="@+id/libraryfee"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="sale"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_weight="1"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:textSize="@dimen/_11sdp" />
+                        </LinearLayout>
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/libraryfeetext"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="Library Fee"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_9sdp"/>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

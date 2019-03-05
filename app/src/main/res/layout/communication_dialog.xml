@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E3E8F0"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight=".5"
+            android:singleLine="true"
+            android:src="@drawable/mailicon"
+            android:text="Attachments"
+            android:textAlignment="textStart"
+            android:textColor="#A14D3F"
+            android:textSize="16dp" />
+
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5"
+            android:padding="5dp"
+            android:src="@drawable/cancelicon" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        android:layout_gravity="center">
+
+
+        <Button
+            android:id="@+id/imageupload"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="wrap_content"
+            android:text=" Image Upload "
+            android:layout_gravity="center"
+            android:background="#A14D3F"
+            android:textColor="@color/white1"
+            />
+
+
+        <Button
+            android:id="@+id/pdfupload"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="wrap_content"
+            android:text=" PDF Upload "
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:background="#A14D3F"
+            android:textColor="@color/white1"
+            />
+
+
+    </LinearLayout>
+
+
+
+   <!-- <Button
+        android:id="@+id/imageupload"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        android:text=" Image Upload "
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:background="#A14D3F"
+        android:textColor="@color/white1"
+        />
+
+
+    <Button
+        android:id="@+id/pdfupload"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        android:text=" PDF Upload "
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:background="#A14D3F"
+        android:textColor="@color/white1"
+        />-->
+
+</LinearLayout>
+
+

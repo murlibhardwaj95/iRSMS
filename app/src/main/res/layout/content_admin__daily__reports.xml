@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.Admin_Daily_Reports"
+    tools:showIn="@layout/activity_admin__daily__reports">
+    <LinearLayout
+        android:id="@+id/viewPagerLinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/teacherProfileInfo"
+        android:layout_marginTop="@dimen/_minus5sdp"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/admintab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabTextColor="@color/transparent_black"
+            app:tabIndicatorColor="@color/Admin_theme"
+            app:tabSelectedTextColor="@color/black"
+            >
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/academic"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:text="Academic"
+                android:textAlignment="center"
+                android:textSize="@dimen/_12sdp"
+                />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/collection"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/personinfo"
+                android:paddingTop="@dimen/_10sdp"
+                android:text="Collection"
+                android:textAlignment="center"
+                android:textSize="@dimen/_12sdp" />
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/adminViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_gray">
+
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="@color/Admin_theme"
+        android:textSize="8dp"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:layout_alignParentBottom="true"
+        android:text="Powered By Syon Technologies" />
+
+
+</RelativeLayout>

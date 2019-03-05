@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/layout"
+    android:layout_height="match_parent">
+
+  <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"/>
+
+        <Button
+            android:id="@+id/bt"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:text="15 June 2017"
+            android:layout_weight=".2"
+            android:textSize="12dp"
+            android:background="#AA531C"
+            android:textColor="@color/white1"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="end"/>
+
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            app:cardBackgroundColor="#A9A9A9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="8dp"
+            android:elevation="3dp"
+            card_view:cardCornerRadius="@dimen/card_album_radius">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white1"
+                android:orientation="horizontal">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/iv_offers"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/profile"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    />
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/img"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:paddingBottom="5dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:id="@+id/heading"
+                        android:textSize="14dp"
+                        android:singleLine="true"
+                        android:text="okkkkk"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+<!--
+                    <TextView
+                        android:paddingBottom="5dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:id="@+id/date"
+                        android:textSize="14dp"
+                        android:singleLine="true"
+                        android:text="okkkkk"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+-->
+
+
+<!--
+                    <TextView
+                        android:paddingBottom="5dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:id="@+id/des"
+                        android:textSize="14dp"
+                        android:text="okkkkk"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+-->
+
+
+                    <!--
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="85dp"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:paddingBottom="5dp"
+                                    android:paddingTop="5dp"
+                                    android:layout_weight="1"
+                                    android:text="Product Quantity"
+                                    android:textColor="@color/font"
+                                    android:textSize="12dp" />
+
+
+                                <TextView
+                                    android:id="@+id/offerDesc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="85dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:paddingBottom="5dp"
+                                    android:paddingTop="5dp"
+                                    android:text="description"
+                                    android:textColor="@color/font"
+                                    android:textSize="12dp" />
+
+                            </LinearLayout>
+                    -->
+
+                    <RelativeLayout
+                        android:paddingLeft="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!--
+                                    <CheckBox
+                                        android:layout_centerVertical="true"
+                                        android:id="@+id/checkbox"
+                                        android:layout_toLeftOf="@+id/removetocart"
+                                        android:layout_width="wrap_content"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_height="wrap_content" />
+                        -->
+
+<!--
+                        <ImageView
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/download"
+                            android:id="@+id/removetocart"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+-->
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

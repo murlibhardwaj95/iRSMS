@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/_3sdp"
+    android:paddingBottom="@dimen/_3sdp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/salarydepartment"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_2sdp"
+        android:text="Department"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:background="@color/bg_gray"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11sdp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/bg_gray">
+
+    </View>
+
+</LinearLayout>

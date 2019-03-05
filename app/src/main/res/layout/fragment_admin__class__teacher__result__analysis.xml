@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragement.Admin_Class_Teacher_Result_Analysis">
+
+    <SearchView
+        android:id="@+id/admin_Class_Teacher_Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:queryHint="Search Teacher"
+        android:background="#eae5e5"
+        ></SearchView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#e1dada"></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="wrap_content"
+                android:text="S.No."
+                android:paddingLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_11sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Teacher Name"
+                android:paddingLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_11sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="wrap_content"
+                android:text="Designation"
+                android:textSize="@dimen/_11sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#e1dada"></View>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/admin_class_teacher_Result_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp">
+
+    <FrameLayout
+        android:id="@+id/f1"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerHorizontal="true">
+    <ImageView
+        android:id="@+id/os_images"
+        android:layout_width="@dimen/_36sdp"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:src="@mipmap/ic_launcher" />
+        <TextView
+            android:id="@+id/nCounter"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:text="20"
+            android:textSize="@dimen/_8sdp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="@dimen/_28sdp"
+            android:background="@drawable/notification_circle"/>
+
+
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_below="@+id/f1"
+        android:id="@+id/os_texts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_marginTop="5dp"
+        android:text="This is Just Dummy Text"
+       android:gravity="center"
+        android:textSize="@dimen/_11sdp" />
+
+</RelativeLayout>
